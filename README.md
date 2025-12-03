@@ -107,8 +107,22 @@ The Streamlit app provides:
     - Tumor Type (Benign / Malignant)
     - Statistical bar chart of class distribution
 
+### Required Input Features
+
+Your CSV file must contain the 30 standard features from the WDBC dataset:
+```
+radius_mean, texture_mean, perimeter_mean, area_mean, smoothness_mean,
+compactness_mean, concavity_mean, concave_points_mean, symmetry_mean, fractal_dimension_mean,
+radius_se, texture_se, perimeter_se, area_se, smoothness_se, compactness_se, concavity_se,
+concave_points_se, symmetry_se, fractal_dimension_se,
+radius_worst, texture_worst, perimeter_worst, area_worst, smoothness_worst, compactness_worst,
+concavity_worst, concave_points_worst, symmetry_worst, fractal_dimension_worst
+```
+**A sample input CSV file is already included inside the web application.
+You can download it directly from the app interface.** 
+
 ## Preview
-![test](images/app.gif)
+![test](images/preview.gif)
 
 ## Data Sources 
 

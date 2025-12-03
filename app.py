@@ -56,7 +56,20 @@ Simply upload your medical CSV file containing the 30 standard features extracte
 The system preprocesses your data using the same scaling method used during training, feeds it into the model, and predicts whether each case is Benign or Malignant.
 You will also see statistical charts that help you better understand the distribution of the predictions.""")
 
-uploaded_file = st.file_uploader("📁 Please Upload your CSV file (must contain 30 features)", type=["csv"])
+st.write("""Your CSV file must contain the 30 official WDBC features with the exact column names.
+            If you are unsure, please download the sample file provided.""")
+
+sample = pd.read_csv("data/x_test_df.csv")
+sample = sample.to_csv(index=False)
+st.download_button(
+label="Sample",
+data= sample,
+file_name="sample.csv",
+mime="text/csv"
+)
+
+uploaded_file = st.file_uploader("📁 Please Upload your CSV file (must contain 30 features).", type=["csv"])
+
 
 if st.button("Predict"):
  if uploaded_file is not None:
