@@ -59,7 +59,7 @@ You will also see statistical charts that help you better understand the distrib
 st.write("""Your CSV file must contain the 30 official WDBC features with the exact column names.
             If you are unsure, please download the sample file provided.""")
 
-sample = pd.read_csv("data/x_test_df.csv")
+sample = pd.read_csv("data/MYSample.csv")
 sample = sample.to_csv(index=False)
 st.download_button(
 label="Sample",
