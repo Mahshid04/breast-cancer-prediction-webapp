@@ -122,7 +122,7 @@ concavity_worst, concave_points_worst, symmetry_worst, fractal_dimension_worst
 You can download it directly from the app interface.** 
 
 ## Preview
-![test](images/preview.gif)
+![test](images/app.gif)
 
 ## Data Sources 
 
